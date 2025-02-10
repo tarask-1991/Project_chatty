@@ -9,9 +9,9 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp() {
-        Configuration.browser = "chrome";  // Вибір браузера
-        Configuration.timeout = 10000;
-        open("http://chatty.telran-edu.de:8089/login");  // Відкриваємо сторінку
+        Configuration.browser = "chrome";  // Выбор браузера
+        Configuration.timeout = 2000;
+        open("http://chatty.telran-edu.de:8089/login");  // Открываем страницу
     }
 
 }
