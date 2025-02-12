@@ -1,5 +1,3 @@
-package org.telrancourse.test;
-
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -12,6 +10,8 @@ public class BaseTest {
         Configuration.browser = "chrome";  // Выбор браузера
         Configuration.timeout = 2000;
         open("http://chatty.telran-edu.de:8089/login");  // Открываем страницу
+
     }
+
 
 }
