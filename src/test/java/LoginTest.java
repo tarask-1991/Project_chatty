@@ -72,4 +72,18 @@ public class LoginTest extends BaseTest {
         $("button[type='submit']").shouldBe(disabled);
     }
 
+
+    @Test
+    public void passwordTooShortTest() {
+
+        // Вводим правильный email
+        loginPage.enterEmail("Krychkovski@gmail.com");
+
+        // Вводим неправильный слишком короткий пароль
+        loginPage.enterPassword("Wrong1!");
+
+        // Проверяем, что кнопка логина отключена
+        loginPage.checkLoginButtonDisabled();
+    }
+
 }

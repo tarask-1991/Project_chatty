@@ -52,4 +52,9 @@ public class LoginPage {   // Локатор для заголовка стра�
     public void checkErrorMessage(String incorrectEmail ) {
         checkErrorMessage.shouldHave(text(incorrectEmail));
     }
+
+    // Проверяем, что кнопка логина отключена
+    public void checkLoginButtonDisabled() {
+        loginButton.shouldBe(disabled);
+    }
 }
